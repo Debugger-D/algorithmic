@@ -26,4 +26,5 @@ function unique2(arr = []) {
   })
   return arrPool
 }
+
 console.log(unique2(arr))
