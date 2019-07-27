@@ -38,12 +38,17 @@
  * @return {boolean}
  */
 var isValidBST = function(root) {
-  if(root === null) true
-  if(root.left < root && root.right > root) {
-    if(isValidBST(root.left) && isValidBST(root.right)){
-      return true
-    }
+  let arr = [];
+  function a (root){
+      if(root !== null) {
+          a(root.left)
+          arr.push(root.val)
+          a(root.right)
+      }
   }
-  
-  return false
+  a(root)
+  for(let i = 0; i < arr.length; i++) {
+      if (arr[i] >= arr[i+1]) return false
+  }
+  return true
 };
