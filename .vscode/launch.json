@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/Math/6.reverseBits.js"
+      "program": "${workspaceFolder}/Math/7.generate.js"
     }
   ]
 }
